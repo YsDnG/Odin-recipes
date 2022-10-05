@@ -1,0 +1,53 @@
+*{
+    background-color: rgb(242, 250, 242 ); 
+}
+img{
+    height: auto;
+    width:500px;
+    
+}
+
+.imgRecipe{
+border-radius: 25%;
+}
+
+div{
+    text-align: center;
+}
+.step
+{
+    text-align: left;
+}
+h1{
+    
+    font-family: sans-serif;
+    font-weight: 900;
+}
+h2{
+    font-family: sans-serif;
+    text-align: center;
+    font-style: oblique;
+}
+p{
+    font-size: 15px;
+    font-family: Times, serif;
+}
+h4{
+    font-family: sans-serif;
+    text-align: left;
+}
+
+ul{
+   
+    text-align: center;
+    margin-top: 5%;
+}
+
+.ul.recipe{
+    text-align: left;
+}
+li{
+    margin-top: 2%;
+    font-weight:bold ;
+    text-align: left;
+}
