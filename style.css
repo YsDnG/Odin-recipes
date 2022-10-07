@@ -1,39 +1,122 @@
-*{
-    background-color: rgb(242, 250, 242 ); 
-}
-img{
-    height: auto;
-    width:500px;
+
+body{
     
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+    color: #557A95;
+    height: 100%;
+
+}
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family:"Fira Sans", sans-serif;
+    margin-left : auto;
+    margin-right: auto;
+    padding: 50px 0 ;
+    border-radius: 5%;
+    background-color: #b3b3b3;
+    color: #5D5C61;
+     
+}
+.header_index
+{
+    background-image: url(./recipes_Img/img_Back);
+}
+.container{
+    width: 90%;
+    margin: 0 auto 10% 10%;
+     
+}
+section{
+    
+    float: left;
+    margin: 10% 0;
+    border-style: dashed;
+    padding: 0 10px;
+    width: 25%;
+
+}
+aside{
+    float: right;
+    margin: 20% 0 0 0;
+    width: 70%;
+    text-align: center;
+    
+}
+.asideRecipe{
+    margin: 5% 0 5% 0;
+    border-style: dashed;
+
 }
 
 .imgRecipe{
-border-radius: 25%;
+    margin: 10% 10% 0 0 ;
+    width: 40%;
+    height: 300px;
+    float: right;
+    border-radius: 25%;
+    border-bottom: 1px solid #5D5C61;
+    text-align: center;
+}
+.imgIndex{
+    border-radius: 25%;
+    width: 80%;
+
 }
 
 div{
     text-align: center;
 }
+
 .step
 {
     text-align: left;
+    margin: 0 15px 0 0;
 }
+
+.intro
+{
+    margin: 25px 15px 0 0;
+   
+   border-top: 1px solid #5D5C61;
+   text-align: left;
+   padding: 10px 10px;
+   border-bottom: 1px solid #5D5C61;
+}
+
+footer{
+    margin: 0 0 0 0;
+    clear: both;
+     height: 50px;
+     background-color: #cccccc;
+     bottom: 0px;
+     text-align: center;
+     padding-top: 15px;
+}
+
 h1{
+    margin: 0 0 0 0;
     
-    font-family: sans-serif;
-    font-weight: 900;
 }
+
 h2{
-    font-family: sans-serif;
+   
+    margin: 0 0 10px 0;  
     text-align: center;
     font-style: oblique;
 }
+
 p{
     font-size: 15px;
     font-family: Times, serif;
 }
+
 h4{
-    font-family: sans-serif;
+    
     text-align: left;
 }
 
@@ -41,6 +124,7 @@ ul{
    
     text-align: center;
     margin-top: 5%;
+  
 }
 
 .ul.recipe{
@@ -50,4 +134,11 @@ li{
     margin-top: 2%;
     font-weight:bold ;
     text-align: left;
+}
+
+a{
+    color: #557A95;
+}
+a:hover{
+    color: #7395AE;
 }
