@@ -1,71 +1,136 @@
 
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
 body{
     
     margin: 0;
     padding: 0;
     background-color: #e6e6e6;
-    color: #557A95;
-    height: 100%;
+    color :#2d2d2d;
 
 }
 
-header{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-family:"Fira Sans", sans-serif;
-    margin-left : auto;
+
+header{ 
+   
+     margin-left : auto;
     margin-right: auto;
     padding: 50px 0 ;
-    border-radius: 5%;
-    background-color: #b3b3b3;
-    color: #5D5C61;
-     
+     background-color: #e4ddf4;
+     box-shadow: 10px 5px 5px #943d24;
 }
-.header_index
-{
-    background-image: url(./recipes_Img/img_Back);
-}
-.container{
+
+.container {
+    margin : 0 0 0 0;
     width: 90%;
-    margin: 0 auto 10% 10%;
-     
+    padding: 2% 10% ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.container *{
+   
+    flex: auto;
+}
+
 section{
     
-    float: left;
-    margin: 10% 0;
-    border-style: dashed;
+    margin: 3%;
     padding: 0 10px;
-    width: 25%;
+    
 
 }
+.sectionRecipe{
+
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: #2d2d2d;
+    border-width: 5px;
+    padding: 2%;
+    
+}
 aside{
-    float: right;
-    margin: 20% 0 0 0;
-    width: 70%;
+    margin: 15% 15px 5% 15px;
     text-align: center;
+    box-shadow: 0 0 0 0 #943d24;
+    
+    
     
 }
 .asideRecipe{
-    margin: 5% 0 5% 0;
-    border-style: dashed;
 
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: #2d2d2d;
+    border-width: 5px;
+    padding: 1%;
+    margin-top: 5px;
+    flex : 2 1 0% ;
 }
 
 .imgRecipe{
+    
     margin: 10% 10% 0 0 ;
-    width: 40%;
+    width: 300px;
     height: 300px;
-    float: right;
+    flex : 0.5 1 0% ;
     border-radius: 25%;
-    border-bottom: 1px solid #5D5C61;
     text-align: center;
+    animation: appearY 3s ease-out;
+   
 }
 .imgIndex{
-    border-radius: 25%;
-    width: 80%;
+    width: auto;
+    height: 500px;
+    box-shadow: 0 0 0 10px rgba(148, 61, 36, 0.2);
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: #2d2d2d;
+    border-width: 5px;
+    animation: appearX 3s ease-out;
 
+    
+}
+
+@keyframes appearX{
+    from{
+
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+}
+@keyframes appearY{
+    from{
+
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+}
+@keyframes pulseLi{
+    
+    to{
+        box-shadow: 0 0 0 5px rgba(148, 61, 36, 0.5);
+        
+    }
 }
 
 div{
@@ -80,27 +145,49 @@ div{
 
 .intro
 {
-    margin: 25px 15px 0 0;
-   
+    margin: 25px 15px 25px 0;
    border-top: 1px solid #5D5C61;
-   text-align: left;
+   text-align: center;
    padding: 10px 10px;
    border-bottom: 1px solid #5D5C61;
 }
 
 footer{
     margin: 0 0 0 0;
-    clear: both;
+    position: fixed;
      height: 50px;
-     background-color: #cccccc;
-     bottom: 0px;
+     color: #cccccc;
+     bottom: 50%;
      text-align: center;
      padding-top: 15px;
 }
+button{
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 3px;
+    opacity: 0.9;
+    border-color: #7395AE;
+}
+button:hover{
+    background-color: #5D5C61;
+}
 
 h1{
-    margin: 0 0 0 0;
-    
+
+    position: relative;
+    font-family: "Norse";
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+    font-size: 5vw;
+    text-align: center;
+    color: #282612;
+    bottom: 2vw;
+    opacity: 1;
+    text-shadow:10px 5px 5px #943d24;
+    animation: appearY 1s ease-out;
+      
 }
 
 h2{
@@ -108,11 +195,13 @@ h2{
     margin: 0 0 10px 0;  
     text-align: center;
     font-style: oblique;
+    text-decoration: underline;
 }
 
 p{
     font-size: 15px;
     font-family: Times, serif;
+    animation: appearX 1s ease-out;
 }
 
 h4{
@@ -122,23 +211,56 @@ h4{
 
 ul{
    
-    text-align: center;
-    margin-top: 5%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    text-align: left;
   
 }
 
 .ul.recipe{
+    
     text-align: left;
 }
 li{
-    margin-top: 2%;
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
     font-weight:bold ;
-    text-align: left;
+    box-shadow: 0 0 0 0 #2d2d2d;
+    animation: pulseLi 3s infinite;
+    margin-top: 5px;
+    padding: auto;
+    
 }
 
 a{
-    color: #557A95;
+    color: #2d2d2d;
 }
 a:hover{
     color: #7395AE;
+}
+
+
+@media only screen and (max-width: 1130px){
+    .imgIndex
+    {
+        width: 400px;
+        height: 400px;
+        box-shadow: 0 0 0 10px rgba(148, 61, 36, 0.2);
+        border-style: ridge;
+        border-radius: 50%;
+        border-color: #2d2d2d;
+        border-width: 5px;
+    
+    }
+    .imgRecipe{
+        display: none;
+    }
+    
 }
